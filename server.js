@@ -46,6 +46,7 @@ app.put('/users/:name', function (req, res) {
 });
 
 app.delete('/users/:name', function (req, res) {
+  console.log('bye bitch')
   var data = fs.readFileSync(`${__dirname}/storage.json`)
   var arr = JSON.parse(data)
   var newArr = [];
